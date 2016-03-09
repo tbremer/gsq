@@ -5,7 +5,19 @@
   "bin": {
     "gsq": "./.bin/cli.js"
   },
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbremer/gsq.git"
+  },
+  "author": {
+    "name": "Tom Bremer",
+    "email": "tom@tbremer.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbremer/gsq/issues"
+  },
+  "homepage": "https://github.com/tbremer/gsq#readme",
   "preferGlobal": true,
   "scripts": {
     "test": "eslint src/**",
@@ -57,3 +69,4 @@
     "recursive-copy": "^2.0.2"
   }
 }
+
