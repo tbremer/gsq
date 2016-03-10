@@ -1,6 +1,6 @@
 {
   "name": "gsq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "bin": {
     "gsq": "./.bin/cli.js"
