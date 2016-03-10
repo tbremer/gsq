@@ -34,15 +34,6 @@
     "start": "browser-sync start --config bs-config.js",
     "postinstall": "npm run mkdirs && npm run build"
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ],
-    "plugins": [
-      "transform-object-rest-spread",
-      "transform-object-assign"
-    ]
-  },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-cli": "^6.5.1",
