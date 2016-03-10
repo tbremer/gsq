@@ -3,12 +3,15 @@
 GSQ is about simplicity, quick prototyping, creating something that can be easily shared while maintaining an agnostic stance on your favorite frameworks. Bundled in GSQ are a a few modern build tools and a couple `npm` scripts.
 
 ## Included Build Tools
+
 **For JS:** Babel and Browserify (with the help of babelify) compile the code
+
 **For CSS:** PostCSS with a few plugins to let you write future spec today: `[ "postcss-import", "autoprefixer", "postcss-nesting", "postcss-custom-media", "postcss-css-variables", "postcss-css-variables", "postcss-discard-comments", "postcss-reporter" ]`
 
 ## Getting Started
 
 ### To install with git:
+
 ```bash
 $ git clone https://github.com/tbremer/gsq.git
 $ cd gsq
@@ -17,6 +20,7 @@ $ npm install
 ```
 
 ### To install with git:
+
 ```bash
 $ npm install --global gsq
 $ cd path/to/project
