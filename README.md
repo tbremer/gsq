@@ -1,5 +1,6 @@
 GSQ
 ---
+
 *getting started quickly*
 
 GSQ is about simplicity, quick prototyping, creating something that can be easily shared while maintaining an agnostic stance on your favorite frameworks.
