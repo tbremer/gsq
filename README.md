@@ -19,7 +19,7 @@ $ rm -r .git && rm -r .gitignore
 $ npm install
 ```
 
-### To install with git:
+### To install with npm:
 
 ```bash
 $ npm install --global gsq
