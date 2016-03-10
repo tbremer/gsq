@@ -27,10 +27,10 @@
     "build:js": "browserify src/js/app.js -o htdocs/assets/js/app.js -t [ babelify --presets [ es2015 ] --plugins [ transform-object-rest-spread transform-object-assign ] ]",
     "mkdirs": "mkdirp htdocs/assets/css htdocs/assets/js",
     "watch": "babel-node build-scripts/watch.js",
-    "watch:start": "babel-node build-scripts/watch-start.js",
     "watch:css": "babel-node ./build-scripts/watch-css.js",
     "watch:html": "babel-node ./build-scripts/watch-html.js",
     "watch:js": "babel-node ./build-scripts/watch-js.js",
+    "watch:start": "babel-node build-scripts/watch-start.js",
     "start": "browser-sync start --config bs-config.js",
     "postinstall": "npm run mkdirs && npm run build"
   },
