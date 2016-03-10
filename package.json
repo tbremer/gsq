@@ -1,6 +1,6 @@
 {
   "name": "getting-started-quickly",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "bin": {
     "gsq": "./.bin/cli.js"
@@ -69,4 +69,3 @@
     "recursive-copy": "^2.0.2"
   }
 }
-
