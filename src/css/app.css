@@ -1,0 +1,15 @@
+body {
+  background-color: #efefef;
+  &::after {
+    display: block;
+    text-align: center;
+    content: 'GSQ is built and ready';
+    font-size: 2rem;
+    padding: 1rem;
+    /**
+     * thanks for the fonts medium!
+     * @url https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.bxedw8alr
+     */
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  }
+}

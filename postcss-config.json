@@ -1,0 +1,14 @@
+{
+  "output": "htdocs/assets/css/app.css",
+  "use": [
+    "postcss-import",
+    "autoprefixer",
+    "postcss-nesting",
+    "postcss-custom-media",
+    "postcss-css-variables",
+    "postcss-css-variables",
+    "postcss-discard-comments",
+    "postcss-reporter"
+  ],
+  "autoprefixer": { "browsers": ["last 3 version"] }
+}
