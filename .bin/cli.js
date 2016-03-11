@@ -3,6 +3,8 @@
 
 var _path = require('path');
 
+var _fs = require('fs');
+
 var _child_process = require('child_process');
 
 var _chalk = require('chalk');
@@ -18,7 +20,7 @@ message = _chalk2.default.magenta,
 
 var orignalDirectory = process.cwd(),
     moduleDir = (0, _path.resolve)(__dirname, '../'),
-    blackFlag = ['.DS_Store', '.bin*', '.git*', '.gitignore', 'LICENSE', 'htdocs*', 'node_modules*', 'lib'].map(function (f) {
+    blackFlag = ['.DS_Store', '.bin*', '.git*', '.gitignore', 'LICENSE', 'htdocs*', 'node_modules*', 'lib', 'package.json'].map(function (f) {
   return '--exclude ' + f;
 });
 
@@ -65,6 +67,7 @@ runPackager.on('close', function () {
 
     log(message('Installing dependencies…'));
     (0, _child_process.spawn)('rm', (process.cwd() + '/scaffold.zip').split(' '));
+    (0, _fs.writeFileSync)(process.cwd() + '/package.json', (0, _fs.readFileSync)(moduleDir + '/lib/package-template.json').toString());
 
     var install = (0, _child_process.spawn)('npm', 'install'.split(' '), { stdio: 'inherit' });
 

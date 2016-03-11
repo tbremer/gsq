@@ -15,7 +15,8 @@ GSQ is about simplicity, quick prototyping, creating something that can be easil
 ```bash
 $ git clone https://github.com/tbremer/gsq.git
 $ cd gsq
-$ rm -r .git && rm -r .gitignore
+$ rm -r .git && rm .gitignore
+$ mv lib/package-template.json ./package.json
 $ npm install
 ```
 
