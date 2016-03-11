@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import {resolve, relative} from 'path';
 import {spawn} from 'child_process';
 import chalk from 'chalk';

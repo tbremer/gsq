@@ -32,6 +32,7 @@
     "watch:js": "babel-node ./build-scripts/watch-js.js",
     "watch:start": "babel-node build-scripts/watch-start.js",
     "start": "browser-sync start --config bs-config.js",
+    "prepublish": "babel .bin/es6-cli.js --out-file .bin/cli.js",
     "postinstall": "npm run mkdirs && npm run build"
   },
   "dependencies": {

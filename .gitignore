@@ -35,3 +35,4 @@ node_modules
 # Module Specific Ignores
 .DS_Store
 htdocs
+.bin/cli.js
