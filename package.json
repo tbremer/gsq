@@ -1,6 +1,6 @@
 {
   "name": "gsq",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "bin": {
     "gsq": "./.bin/cli.js"
@@ -20,8 +20,8 @@
   "homepage": "https://github.com/tbremer/gsq#readme",
   "preferGlobal": true,
   "engines": {
-      "node": ">= 0.12.0",
-      "iojs": ">= 1.0.0"
+    "node": ">= 0.12.0",
+    "iojs": ">= 1.0.0"
   },
   "scripts": {
     "test": "eslint src/**",
