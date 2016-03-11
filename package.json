@@ -19,12 +19,17 @@
   },
   "homepage": "https://github.com/tbremer/gsq#readme",
   "preferGlobal": true,
+  "engines": {
+      "node": ">= 0.12.0",
+      "iojs": ">= 1.0.0"
+  },
   "scripts": {
     "test": "eslint src/**",
     "build": "npm run build:css && npm run build:html && npm run build:js",
     "build:css": "postcss --config ./postcss-config.json src/css/app.css",
     "build:html": "copyfiles --up 1 'src/**/*.html' 'htdocs/'",
     "build:js": "browserify src/js/app.js -o htdocs/assets/js/app.js -t [ babelify --presets [ es2015 ] --plugins [ transform-object-rest-spread transform-object-assign ] ]",
+    "generate-cli": "babel lib/cli.js --out-file .bin/cli.js",
     "mkdirs": "mkdirp htdocs/assets/css htdocs/assets/js",
     "watch": "babel-node build-scripts/watch.js",
     "watch:css": "babel-node ./build-scripts/watch-css.js",
@@ -32,7 +37,6 @@
     "watch:js": "babel-node ./build-scripts/watch-js.js",
     "watch:start": "babel-node build-scripts/watch-start.js",
     "start": "browser-sync start --config bs-config.js",
-    "preversion": "babel .bin/es6-cli.js --out-file .bin/cli.js",
     "postinstall": "npm run mkdirs && npm run build"
   },
   "dependencies": {
