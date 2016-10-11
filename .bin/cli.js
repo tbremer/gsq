@@ -13,14 +13,12 @@ var _chalk2 = _interopRequireDefault(_chalk);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var log = console.log,
-    // eslint-disable-line
-message = _chalk2.default.magenta,
-    error = _chalk2.default.red;
-
-var orignalDirectory = process.cwd(),
-    moduleDir = (0, _path.resolve)(__dirname, '../'),
-    blackFlag = ['.DS_Store', '.bin*', '.git*', '.gitignore', 'LICENSE', 'htdocs*', 'node_modules*', 'lib', 'package.json'].map(function (f) {
+var log = console.log; // eslint-disable-line
+var message = _chalk2.default.magenta;
+var error = _chalk2.default.red;
+var orignalDirectory = process.cwd();
+var moduleDir = (0, _path.resolve)(__dirname, '../');
+var blackFlag = ['.DS_Store', '.bin*', '.git*', '.gitignore', 'LICENSE', 'htdocs*', 'node_modules*', 'lib*', 'package.json'].map(function (f) {
   return '--exclude ' + f;
 });
 
